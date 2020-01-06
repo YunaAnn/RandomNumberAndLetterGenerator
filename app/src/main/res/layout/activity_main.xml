@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:paddingTop="10dp"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/about"
+        android:textStyle="bold"
+        android:layout_gravity="center"
+        android:textColor="#262626" />
+
+    <View style="@style/Divider"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Random number/letter"
+        android:layout_gravity="center"
+        android:textColor="#262626"
+        android:textSize="30dp"
+        android:textStyle="bold" />
+    <View style="@style/Divider"/>
+    <TextView
+        android:id="@+id/text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:text=" "
+        android:textColor="#262626"
+        android:textSize="100dp"
+        android:textStyle="bold" />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="From"
+        android:layout_gravity="center"
+        android:textColor="#262626"
+        android:textSize="30dp"
+        android:textStyle="bold" />
+
+    <android.support.design.widget.TextInputLayout
+        android:layout_width="359dp"
+        android:layout_height="57dp"
+        android:layout_gravity="center"
+        android:layout_marginRight="10dp">
+
+        <android.support.design.widget.TextInputEditText
+            android:id="@+id/from_box"
+            android:layout_width="259dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="1"
+            android:inputType="numberSigned"
+            android:textSize="18dp" />
+    </android.support.design.widget.TextInputLayout>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="To"
+        android:textColor="#262626"
+        android:textSize="30dp"
+        android:layout_gravity="center"
+        android:textStyle="bold" />
+
+    <android.support.design.widget.TextInputLayout
+        android:layout_width="359dp"
+        android:layout_height="64dp"
+        android:layout_gravity="center"
+        android:layout_marginRight="10dp">
+
+        <android.support.design.widget.TextInputEditText
+            android:id="@+id/to_box"
+            android:layout_width="259dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:inputType="numberSigned"
+            android:text="10"
+            android:textSize="18dp" />
+    </android.support.design.widget.TextInputLayout>
+
+        <Button
+            android:id="@+id/number_button"
+            android:layout_width="100dp"
+            android:layout_gravity="center"
+            android:backgroundTint="@color/colorPrimary"
+            android:textColor="#f2f2f2"
+            android:layout_height="wrap_content"
+            android:text="Number" />
+
+    <View style="@style/Divider"/>
+
+    <Button
+        android:id="@+id/letter_button"
+        android:layout_width="100dp"
+        android:textColor="#f2f2f2"
+        android:layout_gravity="center"
+        android:backgroundTint="@color/colorPrimaryDark"
+        android:layout_height="wrap_content"
+        android:text="Letter" />
+
+</LinearLayout>
